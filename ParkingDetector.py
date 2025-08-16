@@ -22,7 +22,6 @@ class ParkingDetector:
         self.aruco_dict = cv.aruco.getPredefinedDictionary(cv.aruco.DICT_6X6_250) #Define um dicionário de marcadores ArUco. 
         self.parameters = cv.aruco.DetectorParameters() #Inicializa oa parametros do identificador de marcadores
         self.detector = cv.aruco.ArucoDetector(self.aruco_dict, self.parameters) #Cria um detector de marcadores ArUco
-
     # iterate through multiple frames, in a live video feed
     def identificador_marker_frame(self, frame):
 
